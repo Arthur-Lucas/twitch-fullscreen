@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="video"></div>
+    <script type="text/javascript">
+      var options = {
+        width: 854,
+        height: 480,
+        channel: "otplol_",
+      };
+      var player = new Twitch.Player("video", options);
+      player.setVolume(0.5);
+    </script>
+
+    <!-- <div id="twitch-embed"></div>
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "otplol_",
+        parent: [],
+      });
+    </script> -->
+  </body>
+</html>
